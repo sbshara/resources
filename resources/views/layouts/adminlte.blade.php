@@ -1,0 +1,6 @@
+@include('layouts.adminlte.head')
+@include('layouts.adminlte.nav')
+@include('layouts.adminlte.left')
+@include('layouts.adminlte.wrapper')
+@include('layouts.adminlte.footer')
+@include('layouts.adminlte.right')
