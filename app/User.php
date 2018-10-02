@@ -6,6 +6,7 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use \Carbon\Carbon;
+use App\Settings;
 
 class User extends Authenticatable
 {
@@ -29,12 +30,9 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function setting()
+    public function settings()
     {
-        return [
-            'skin'      =>  'skin-blue',
-            'sidebar'   =>  'sidebar-mini'
-        ];
+        return Settings::bodyTags();
     }
 
     public function fullName()

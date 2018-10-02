@@ -41,3 +41,7 @@
 
 
 @yield('otherCSS')
+
+
+<!-- Your own CSS File-->
+{{-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> --}}

@@ -8,13 +8,11 @@
 
 </head>
 <body 
-    class="hold-transition 
-    @auth
-        {{ Auth::user()->settings() }}
-        {{ Auth::user()->settings() }}
-    @else
-        skin-blue sidebar-mini
-    @endauth
+    class="@auth
+                {{ Auth::user()->settings() }}
+           @else
+                skin-blue sidebar-mini
+           @endauth
 
     ">
     <div class="wrapper">
@@ -22,7 +20,7 @@
             <!-- Logo -->
             <a href="{{ route('home') }}" class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
-                <span class="logo-mini">{!! config('app.shortName') !!}</span>
+                <span class="logo-mini">{!! config('app.shortName', '<b>S</b>HB') !!}</span>
                 <!-- logo for regular state and mobile devices -->
                 <span class="logo-lg">{{ config('app.name', 'SBSHARA') }}</span>
             </a>
