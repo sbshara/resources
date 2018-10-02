@@ -42,7 +42,7 @@ class User extends Authenticatable
         return $this->name;
     }
 
-    public function jobTitle()
+    public function title()
     {
         return 'Developer';
     }
@@ -56,4 +56,6 @@ class User extends Authenticatable
     {
         return true;
     }
+
+
 }
