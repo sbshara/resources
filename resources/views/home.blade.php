@@ -1,22 +1,22 @@
-@extends('layouts.adminlte')
+@extends('adminlte.app')
 
 
-@section('PHeader')
-
-@endsection
-
-
-@section('PHeaderDescription')
-
+@section('otherMETA')
 @endsection
 
 @section('otherCSS')
-
 @endsection
 
-
 @section('otherJS')
+@endsection
 
+@section('contentTitle')
+@endsection
+
+@section('contentTitleDesc')
+@endsection
+
+@section('version')
 @endsection
 
 @section('content')
