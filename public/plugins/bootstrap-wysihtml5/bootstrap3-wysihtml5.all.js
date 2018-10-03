@@ -24,8 +24,7 @@ if(!Array.isArray) {
   Array.isArray = function(arg) {
     return Object.prototype.toString.call(arg) === '[object Array]';
   };
-};
-/**
+};/**
  * @license wysihtml5x v0.4.15
  * https://github.com/Edicy/wysihtml5
  *
