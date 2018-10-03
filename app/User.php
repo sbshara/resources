@@ -5,8 +5,6 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use \Carbon\Carbon;
-use App\Settings;
 
 class User extends Authenticatable
 {
@@ -29,31 +27,4 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
-
-    public function settings()
-    {
-        return Settings::bodyTags();
-    }
-
-    public function fullName()
-    {
-        return $this->name;
-    }
-
-    public function title()
-    {
-        return 'Developer';
-    }
-
-    public function joined()
-    {
-        return Carbon::parse($this->created_at)->format('M Y');
-    }
-
-    public function online()
-    {
-        return true;
-    }
-
-
 }
