@@ -8,7 +8,7 @@
 
 </head>
 <body 
-    class="
+    class="hold-transition 
     @auth
         {{ Auth::user()->settings() }}
     @else
