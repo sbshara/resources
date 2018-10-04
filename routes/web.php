@@ -13,8 +13,13 @@
 
 Route::get('/', function () {
     return view('welcome');
+})->middleware('guest');
+
+Auth::routes(['verify' => true]);
+
+Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
+
+
+Route::get('/lock', function(){
+    return view('auth.lock');
 });
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
