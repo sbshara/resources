@@ -1,4 +1,4 @@
-{{-- <ol class="breadcrumb">
+<ol class="breadcrumb">
     <li>
         <a href="{{ url('home') }}">
             <i class="fa fa-home"></i>
@@ -11,4 +11,4 @@
         </a>
     </li>
     @endforeach
-</ol> --}}
+</ol>

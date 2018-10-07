@@ -1,5 +1,9 @@
 @extends('LaraAdminLTE.app')
 
+@section('breadcrumbs')
+    @include('LaraAdminLTE.breadcrumbs')
+@endsection
+
 @section('otherJS')
   <!-- ChartJS -->
   <script src="{{ asset('vendor/LaraAdminLTE/bower_components/chart.js/Chart.js') }}"></script>

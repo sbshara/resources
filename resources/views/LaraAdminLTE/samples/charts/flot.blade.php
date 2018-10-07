@@ -1,5 +1,9 @@
 @extends('LaraAdminLTE.app')
 
+@section('breadcrumbs')
+    @include('LaraAdminLTE.breadcrumbs')
+@endsection
+
 @section('otherJS')
 <!-- FLOT CHARTS -->
 <script src="{{ asset('vendor/LaraAdminLTE/bower_components/Flot/jquery.flot.js') }}"></script>

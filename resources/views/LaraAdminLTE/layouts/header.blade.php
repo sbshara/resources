@@ -6,7 +6,7 @@
             @yield('contentTitle')
             <small>@yield('contentTitleDesc')</small>
         </h1>
-        @include('LaraAdminLTE.layouts.parts.breadcrumbs')
+        @yield('breadcrumbs')
     </section>
     <!-- Main content -->
     <section class="content">

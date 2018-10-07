@@ -1,5 +1,9 @@
 @extends('LaraAdminLTE.app')
 
+@section('breadcrumbs')
+    @include('LaraAdminLTE.breadcrumbs')
+@endsection
+
 @section('otherJS')
 <!-- Morris.js charts -->
 <script src="{{ asset('vendor/LaraAdminLTE/bower_components/raphael/raphael.min.js') }}"></script>

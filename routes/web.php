@@ -37,6 +37,12 @@ Route::group(['prefix' => 'samples'], function () {
         $this->get('/morris', 'SamplesController@morrisJS');
         $this->get('/inline', 'SamplesController@inlineJS');
     });
+
+    $this->group(['prefix' => 'forms'], function() {
+        $this->get('advanced', 'SamplesController@formAdvanced');
+        $this->get('editor', 'SamplesController@formEditor');
+        $this->get('general', 'SamplesController@formGeneral');
+    });
     
     
 });

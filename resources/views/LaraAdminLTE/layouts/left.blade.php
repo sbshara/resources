@@ -5,7 +5,7 @@
         <!-- Sidebar user panel -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="vendor/LaraAdminLTE/img/people/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="{{ url(Auth::user()->image()) }}" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
                 <p>{{ Auth::user()->fullName() }}</p>
@@ -18,7 +18,6 @@
                 </a>
             </div>
         </div>
-
         <!-- search form -->
         <form action="#" method="post" class="sidebar-form">
             @csrf
@@ -97,22 +96,22 @@
                 </a>
                 <ul class="treeview-menu">
                     <li>
-                        <a href="pages/charts/chartjs.html">
+                        <a href="{{ url('samples/charts/chartjs') }}">
                             <i class="fa fa-circle-o"></i> ChartJS
                         </a>
                     </li>
                     <li>
-                        <a href="pages/charts/morris.html">
+                        <a href="{{ url('samples/charts/morris') }}">
                             <i class="fa fa-circle-o"></i> Morris
                         </a>
                     </li>
                     <li>
-                        <a href="pages/charts/flot.html">
+                        <a href="{{ url('samples/charts/flot') }}">
                             <i class="fa fa-circle-o"></i> Flot
                         </a>
                     </li>
                     <li>
-                        <a href="pages/charts/inline.html">
+                        <a href="{{ url('samples/charts/inline') }}">
                             <i class="fa fa-circle-o"></i> Inline charts
                         </a>
                     </li>
@@ -168,17 +167,17 @@
                 </a>
                 <ul class="treeview-menu">
                     <li>
-                        <a href="pages/forms/general.html">
+                        <a href="{{ url('samples/forms/general') }}">
                             <i class="fa fa-circle-o"></i> General Elements
                         </a>
                     </li>
                     <li>
-                        <a href="pages/forms/advanced.html">
+                        <a href="{{ url('samples/forms/advanced') }}">
                             <i class="fa fa-circle-o"></i> Advanced Elements
                         </a>
                     </li>
                     <li>
-                        <a href="pages/forms/editors.html">
+                        <a href="{{ url('samples/forms/editor') }}">
                             <i class="fa fa-circle-o"></i> Editors
                         </a>
                     </li>

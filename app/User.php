@@ -55,7 +55,8 @@ class User extends Authenticatable implements MustVerifyEmail
 
     public function image()
     {
-        return 'vendor/LaraAdminLTE/img/neutral.jpg';
+        return url('vendor/LaraAdminLTE/img/people/shiblie.jpg');
+        // return url('vendor/LaraAdminLTE/img/neutral.jpg');  // default
     }
 
 

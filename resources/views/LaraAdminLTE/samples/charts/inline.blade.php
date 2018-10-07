@@ -1,5 +1,9 @@
 @extends('LaraAdminLTE.app')
 
+@section('breadcrumbs')
+    @include('LaraAdminLTE.breadcrumbs')
+@endsection
+
 @section('otherJS')
 <!-- jQuery Knob -->
 <script src="{{ asset('vendor/LaraAdminLTE/bower_components/jquery-knob/js/jquery.knob.js') }}"></script>
