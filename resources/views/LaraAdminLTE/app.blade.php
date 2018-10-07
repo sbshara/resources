@@ -4,6 +4,10 @@
 
 @include('LaraAdminLTE.layouts.left')
 
+@include('LaraAdminLTE.layouts.header')
+
+@include('LaraAdminLTE.layouts.parts.topboxes')
+
 @include('LaraAdminLTE.layouts.content')
 
 @include('LaraAdminLTE.layouts.footer')

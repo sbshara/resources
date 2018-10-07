@@ -23,3 +23,21 @@ Route::get('/home', 'HomeController@index')->name('home')->middleware('verified'
 Route::get('/lock', function(){
     return view('auth.lock');
 });
+
+
+/**
+ * Sample Pages
+ */
+
+Route::group(['prefix' => 'samples'], function () {
+    
+    $this->group(['prefix' => 'charts'], function() {
+        $this->get('/chartjs', 'SamplesController@chartJS');
+        $this->get('/flot', 'SamplesController@flotJS');
+        $this->get('/morris', 'SamplesController@morrisJS');
+        $this->get('/inline', 'SamplesController@inlineJS');
+    });
+    
+    
+});
+
